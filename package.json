@@ -1,0 +1,33 @@
+{
+  "name": "koa-nextjs",
+  "version": "0.0.1",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "author": {
+    "email": "harisvsulaiman@gmail.com",
+    "name": "Haris Sulaiman"
+  },
+  "repository": "harisvsulaiman/koa-nextjs",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "pretest": "yarn build",
+    "prepublish": "yarn test",
+    "test": "jest"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "koa": "^2.13.1",
+    "koa-compose": "^4.1.0",
+    "on-finished": "^2.3.0",
+    "statuses": "^2.0.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "microbundle": "^0.13.0",
+    "supertest": "^6.1.3"
+  }
+}
