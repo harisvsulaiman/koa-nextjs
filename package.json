@@ -1,5 +1,5 @@
 {
-  "name": "koa-nextjs",
+  "name": "koa-nextjs-compat",
   "version": "0.0.1",
   "source": "src/index.js",
   "main": "dist/index.js",
@@ -8,16 +8,13 @@
     "email": "harisvsulaiman@gmail.com",
     "name": "Haris Sulaiman"
   },
-  "repository": "harisvsulaiman/koa-nextjs",
+  "repository": "git://github.com/harisvsulaiman/koa-nextjs.git",
   "scripts": {
     "build": "microbundle",
     "dev": "microbundle watch",
     "pretest": "yarn build",
     "prepublish": "yarn test",
     "test": "jest"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
     "koa": "^2.13.1",
